@@ -75,20 +75,22 @@ Sponsor technology is the **core engine, not a coat of paint** — the gauge, si
 ## Tech stack
 
 **Frontend** — Next.js (App Router) · TypeScript · Tailwind CSS · shadcn/ui · D3 · Recharts · Framer Motion
+
 **AI / Data** — Exa Search API · OpenAI API · curated seed data from primary Korean sources
+
 **Deploy** — Vercel
 
 ---
 
 ## Run locally
 
-\`\`\`bash
+```bash
 pnpm install
 
 cp .env.example .env.local      # add EXA_API_KEY and OPENAI_API_KEY
                                 # (used server-side only — never exposed to the client)
 pnpm dev                        # → http://localhost:3000
-\`\`\`
+```
 
 The live agent falls back to cached responses if keys are absent, so the dashboard renders fully without them.
 
