@@ -1,11 +1,11 @@
-import { ScreenStub } from "@/components/screen-stub";
+import type { Industry, IndustryRisk } from "@/types";
+import industriesData from "@/data/industries.json";
+import riskData from "@/data/risk.json";
+import { RiskIndexScreen } from "@/components/risk-index-screen";
+
+const industries = industriesData as Industry[];
+const risks = riskData as IndustryRisk[];
 
 export default function HomePage() {
-  return (
-    <ScreenStub
-      kicker="REGCON · Regulatory Risk Index"
-      title="How hot is regulation in this industry, right now?"
-      blurb="A single DEFCON-style gauge of legislative and regulatory risk per Korean industry — sourced from primary Korean filings and re-scored live by an AI agent."
-    />
-  );
+  return <RiskIndexScreen industries={industries} risks={risks} />;
 }
