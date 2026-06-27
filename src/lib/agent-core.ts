@@ -47,8 +47,10 @@ const INDUSTRY_LABEL: Record<IndustryCode, string> = {
   logistics: "logistics",
 };
 
-const EXA_TIMEOUT_MS = 12_000;
-const OPENAI_TIMEOUT_MS = 20_000;
+// Generous timeouts: OpenAI can take 10–25s under load, and aborting an
+// in-flight fetch surfaces as a confusing "fetch failed" via undici.
+const EXA_TIMEOUT_MS = 20_000;
+const OPENAI_TIMEOUT_MS = 45_000;
 
 interface ExaResult {
   title: string;
@@ -58,17 +60,45 @@ interface ExaResult {
   text?: string;
 }
 
-async function fetchWithTimeout(
+async function fetchOnce(
   url: string,
   init: RequestInit,
   ms: number,
 ): Promise<Response> {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), ms);
+  const host = new URL(url).host;
   try {
     return await fetch(url, { ...init, signal: ctrl.signal });
+  } catch (e) {
+    // signal.aborted is the reliable timeout signal — undici otherwise
+    // reports an aborted in-flight fetch as a bare "fetch failed".
+    if (ctrl.signal.aborted) {
+      throw new Error(`timeout after ${ms}ms calling ${host}`);
+    }
+    const cause = (e as { cause?: { code?: string; message?: string } })?.cause;
+    const detail = cause?.code || cause?.message || (e as Error)?.message;
+    console.error(`[agent] fetch to ${host} failed:`, detail, cause ?? e);
+    throw new Error(`fetch ${host} failed: ${detail}`);
   } finally {
     clearTimeout(timer);
+  }
+}
+
+// One retry on a transient network error (not on a timeout — already waited).
+async function fetchWithTimeout(
+  url: string,
+  init: RequestInit,
+  ms: number,
+): Promise<Response> {
+  try {
+    return await fetchOnce(url, init, ms);
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    if (msg.startsWith("timeout")) throw e;
+    console.warn(`[agent] retrying ${new URL(url).host} after: ${msg}`);
+    await new Promise((r) => setTimeout(r, 600));
+    return fetchOnce(url, init, ms);
   }
 }
 
@@ -160,6 +190,7 @@ Rules:
         ],
         response_format: { type: "json_object" },
         temperature: 0.2,
+        max_tokens: 700,
       }),
     },
     OPENAI_TIMEOUT_MS,

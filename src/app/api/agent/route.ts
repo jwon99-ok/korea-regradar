@@ -84,6 +84,14 @@ export async function POST(req: Request) {
     return NextResponse.json(res);
   } catch (err) {
     const reason = err instanceof Error ? err.message : "live agent failed";
+    console.error(
+      `[agent] live failed for ${industry} after ${Date.now() - started}ms:`,
+      reason,
+      "| EXA key set:",
+      !!process.env.EXA_API_KEY,
+      "| OPENAI key set:",
+      !!process.env.OPENAI_API_KEY,
+    );
 
     // forceLive (cache-builder) wants the real error, not a fallback.
     if (body.forceLive) {
