@@ -24,6 +24,6 @@
     { "party_en": "People Power Party", "seats": 108, "color": "#E61E2B" }
   ],
   "disclaimer_en": "Analytical interpretation · seat counts per public sources (Wikipedia / NEC, as-convened) · 22nd National Assembly. Composition shifts over time — verify against the official roster before relying.",
-  "source_url": "https://open.assembly.go.kr/portal/openapi/",
+  "source_url": "https://en.wikipedia.org/wiki/2024_South_Korean_legislative_election",
   "needs_verification": true
 }

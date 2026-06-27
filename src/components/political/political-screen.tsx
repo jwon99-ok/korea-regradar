@@ -62,7 +62,7 @@ export function PoliticalScreen({
           rel="noopener noreferrer"
           className="inline-flex shrink-0 items-center gap-1 text-accent hover:underline"
         >
-          Open Assembly API
+          Source — 2024 election (Wikipedia)
         </a>
       </div>
     </div>
