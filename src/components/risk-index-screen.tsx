@@ -15,6 +15,7 @@ import { GlobalDisclaimer } from "@/components/global-disclaimer";
 import { IndustrySelector } from "@/components/industry-selector";
 import { RegconGauge } from "@/components/gauge/regcon-gauge";
 import { RegconBadge } from "@/components/regcon-badge";
+import { RegconLadder } from "@/components/regcon-ladder";
 import { RiskSparkline } from "@/components/risk-sparkline";
 import { TriggerFeed } from "@/components/trigger-feed";
 import { ScoreBreakdown } from "@/components/score-breakdown";
@@ -107,7 +108,7 @@ export function RiskIndexScreen({
 
       <div className="grid gap-5 lg:grid-cols-5">
         {/* Hero gauge */}
-        <Panel className="lg:col-span-3">
+        <Panel className="flex flex-col lg:col-span-3">
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-widest text-muted">
@@ -175,6 +176,11 @@ export function RiskIndexScreen({
               <span>~8 periods ago</span>
               <span>now</span>
             </div>
+          </div>
+
+          {/* Fills the lower half + explains the scale, balancing the right column */}
+          <div className="mt-auto border-t border-border pt-4">
+            <RegconLadder current={displayRegcon} />
           </div>
         </Panel>
 
