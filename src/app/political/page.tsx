@@ -1,11 +1,16 @@
-import { ScreenStub } from "@/components/screen-stub";
+import type { Political, Regulation } from "@/types";
+import politicalData from "@/data/political.json";
+import regulationsData from "@/data/regulations.json";
+import { PoliticalScreen } from "@/components/political/political-screen";
+
+const political = politicalData as Political;
+const regulations = regulationsData as Regulation[];
+
+// Bills still moving through the Assembly — the ones the majority math acts on.
+const pendingBills = regulations.filter(
+  (r) => r.reg_type === "bill" && r.status === "pending",
+);
 
 export default function PoliticalPage() {
-  return (
-    <ScreenStub
-      kicker="Political Landscape"
-      title="Who is changing the rules?"
-      blurb="The National Assembly's 300-seat composition and bloc power — the political context behind how Korean regulation shifts. Labeled as analytical interpretation."
-    />
-  );
+  return <PoliticalScreen political={political} pendingBills={pendingBills} />;
 }
