@@ -56,3 +56,74 @@ A **B2B compliance tool**: every foreign company, VC, or law firm entering Korea
 ---
 
 ## How it works
+
+---
+
+## How it works
+```
+Exa Search  ──▶  primary Korean sources (Assembly bills, ministry filings, news)
+
+│
+
+▼
+
+OpenAI  ──▶  English summary · industry classification · risk scoring
+
+│
+
+▼
+
+Dashboard  ──▶  REGCON gauge · ownership signal lights · live brief
+
+```
+
+Sponsor technology is the **core engine, not a coat of paint** — the gauge, signal lights, and live brief are all driven by the Exa + OpenAI agent pipeline.
+
+---
+
+## Tech stack
+
+**Frontend** — Next.js (App Router) · TypeScript · Tailwind CSS · shadcn/ui · D3 · Recharts · Framer Motion
+
+**AI / Data** — Exa Search API · OpenAI API · curated seed data from primary Korean sources
+
+**Deploy** — Vercel · **Built with** — Cursor · Claude Code
+
+---
+
+## Run locally
+
+```bash
+pnpm install
+
+cp .env.example .env.local      # add EXA_API_KEY and OPENAI_API_KEY
+                                # (used server-side only — never exposed to the client)
+pnpm dev                        # → http://localhost:3000
+```
+
+The live agent falls back to cached responses if keys are absent, so the dashboard renders fully without them.
+
+---
+
+## Data sources
+
+| Source | Used for |
+|:--|:--|
+| [Invest Korea](https://www.investkorea.org/) · Foreign Investment Promotion Act | Foreign-ownership caps by industry |
+| [National Assembly Bill Information](https://likms.assembly.go.kr/) | Pending bills / legislative status |
+| [Korea Law Information Center](https://law.go.kr/) | Regulation source text |
+| Korean news *(via Exa)* | Live regulatory signals |
+
+Verified sources link directly to the law (e.g. law.go.kr deep links); unverified entries are labelled **"Needs verification"** rather than guessed. Political seat counts are sourced from public records; interpretation is labelled **"analytical interpretation."**
+
+---
+
+<div align="center">
+
+**Built for Build2026** — a Proof-of-Work hackathon.
+
+Designed and directed by me, built with Claude Code as an AI pair-builder in a single day.
+
+`#supcareer` · `#build2026` · `#hackathon` · `#PetaniAI`
+
+</div>
