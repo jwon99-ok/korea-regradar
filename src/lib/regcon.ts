@@ -16,6 +16,15 @@ export const REGCON_HEX: Record<Regcon, string> = {
   1: "#E74C3C",
 };
 
+// Score → REGCON level (bands match the seed data).
+export function regconFromScore(score: number): Regcon {
+  if (score >= 80) return 1;
+  if (score >= 60) return 2;
+  if (score >= 45) return 3;
+  if (score >= 25) return 4;
+  return 5;
+}
+
 export function regconLabel(level: Regcon): string {
   return REGCON_META[level].label_en;
 }

@@ -1,0 +1,410 @@
+{
+  "telecom": {
+    "industry": "telecom",
+    "headline_en": "Strengthened scrutiny for telecom ownership changes",
+    "summary_en": [
+      "New law requires government approval for ownership changes.",
+      "Aimed at enhancing transparency and preventing issues.",
+      "Triggered by past ownership transitions in telecom sector."
+    ],
+    "impact": {
+      "risk_component": "Ownership-cap changes",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The new law increases regulatory scrutiny, raising risks for foreign companies."
+    },
+    "korean_quote": {
+      "text_ko": "비자발적으로 대주주가 된 경우에도 정부 인가를 받아야 한다.",
+      "source_title": "이훈기 의원 \"기간통신사업자 지배구조 투명성 제고 법안 국회 통과\" : 네이트 뉴스",
+      "source_url": "https://news.nate.com/view/20260423n32575?isq=11000&mid=n0204"
+    },
+    "sources": [
+      {
+        "title": "통신사 최대주주 변경 시 공익성 심사 강화 법안, 본회의 통과 - 디지털데일리",
+        "url": "https://www.ddaily.co.kr/page/view/2026042318332258349"
+      },
+      {
+        "title": "이훈기 의원 \"기간통신사업자 지배구조 투명성 제고 법안 국회 통과\" : 네이트 뉴스",
+        "url": "https://news.nate.com/view/20260423n32575?isq=11000&mid=n0204"
+      },
+      {
+        "title": "＂어쩌다 보니 최대주주＂ 현대차·KT 사태 막는다…지분 변동 정부 인가 의무화",
+        "url": "https://alphabiz.co.kr/news/view/1065603632897237"
+      }
+    ]
+  },
+  "broadcasting": {
+    "industry": "broadcasting",
+    "headline_en": "Broadcasting Law Amendments Passed in Korea",
+    "summary_en": [
+      "A bill to enhance universal viewing rights has passed.",
+      "It mandates fair distribution of broadcasting rights.",
+      "New regulations may impact foreign media companies."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The passage of the bill increases regulatory scrutiny on broadcasting rights, affecting foreign entrants."
+    },
+    "korean_quote": {
+      "text_ko": "'보편적 시청권 강화' 방송법 개정안, 과방위 전체회의 통과",
+      "source_title": "'보편적 시청권 강화' 방송법 개정안, 과방위 전체회의 통과 | 연합뉴스",
+      "source_url": "https://www.yna.co.kr/view/AKR20260507082100001"
+    },
+    "sources": [
+      {
+        "title": "'보편적 시청권 강화' 방송법 개정안, 과방위 전체회의 통과 | 연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20260507082100001"
+      },
+      {
+        "title": "방송법 일부개정법률안 - Uisadang",
+        "url": "https://uisadang.dev/bills/PRC_N2L6L0K3G1G3E1F4D3E9D0D2L2J9K7"
+      },
+      {
+        "title": "\"유튜브·OTT도 법 규제 안으로\"…최민희, '시청각미디어서비스법' 발의 : 네이트 뉴스",
+        "url": "https://news.nate.com/view/20260618n26595"
+      }
+    ]
+  },
+  "aviation": {
+    "industry": "aviation",
+    "headline_en": "Regulatory review of foreign investment in aviation",
+    "summary_en": [
+      "Korean legislative body reviews foreign investment regulations.",
+      "Concerns raised about MBK Partners' foreign ownership.",
+      "New amendments proposed to enhance consumer protection."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 4,
+      "rationale_en": "The review of foreign investment regulations could increase scrutiny and risk for foreign entrants."
+    },
+    "korean_quote": {
+      "text_ko": "입법조사처, \"MBK의 외국인 투자 여부 확인 필요\"",
+      "source_title": "입법조사처, \"MBK의 외국인 투자 여부 확인 필요\"…항공법에선 '외국인'",
+      "source_url": "http://www.bizwnews.com/news/articleView.html?idxno=94908"
+    },
+    "sources": [
+      {
+        "title": "입법조사처, \"MBK의 외국인 투자 여부 확인 필요\"…항공법에선 '외국인'",
+        "url": "http://www.bizwnews.com/news/articleView.html?idxno=94908"
+      },
+      {
+        "title": "항공사업법 일부개정법률안 - Uisadang",
+        "url": "https://uisadang.dev/bills/PRC_K2G5H0F1F1D6F1D1D1L4K2K5I0J1H9"
+      },
+      {
+        "title": "법무부 \"대한항공·KT·SKT는 자사주 소각 대신 처분\"…벤처 특례는 '불가'",
+        "url": "https://news.nate.com/view/20260206n22184"
+      }
+    ]
+  },
+  "news_media": {
+    "industry": "news_media",
+    "headline_en": "Proposed bill targets foreign news service registration",
+    "summary_en": [
+      "A bill aims to strengthen registration for foreign news providers.",
+      "It requires foreign entities to register local representatives.",
+      "The bill is currently under committee review."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The proposed bill increases regulatory obligations for foreign news services."
+    },
+    "korean_quote": {
+      "text_ko": "해외 업체가 국내에서 뉴스를 제공할 때 국내 담당자나 대리인 정보를 등록하게 함으로써 책임을 강화함",
+      "source_title": "신문 등의 진흥에 관한 법률 일부개정법률안 - Uisadang",
+      "source_url": "https://uisadang.dev/bills/PRC_O2P4N0O7W0W3U1T4U2S7S1A2B7Z1Y5"
+    },
+    "sources": [
+      {
+        "title": "신문 등의 진흥에 관한 법률 일부개정법률안 - Uisadang",
+        "url": "https://uisadang.dev/bills/PRC_O2P4N0O7W0W3U1T4U2S7S1A2B7Z1Y5"
+      },
+      {
+        "title": "[단독]한은, 스테이블코인 '은행 50%+1주' 근거로 '방송·신문법' 제시 : 네이트 뉴스",
+        "url": "https://news.nate.com/view/20260410n03129"
+      },
+      {
+        "title": "'제2의 서울신문 사태' 막을 법안 나왔다",
+        "url": "http://journalist.or.kr/m/m_article.html?no=53047"
+      }
+    ]
+  },
+  "power": {
+    "industry": "power",
+    "headline_en": "Korea's Energy Market Faces Major Regulatory Changes",
+    "summary_en": [
+      "New laws aim to diversify power market transactions.",
+      "Private access to the national power grid approved.",
+      "Legislation supports renewable energy integration."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The introduction of new laws and regulations indicates a shift that may complicate market entry for foreign companies."
+    },
+    "korean_quote": {
+      "text_ko": "전력 정책 전반에 거대한 패러다임 변화가 예고됐다.",
+      "source_title": "사상 첫 전력망 민간 개방·RPS 폐지 상임위 통과…\"에너지 대전환 시동\"",
+      "source_url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4416210"
+    },
+    "sources": [
+      {
+        "title": "전력시장 거래상품 다양화 법적 기반 마련… 전기사업 허가 관리도 강화",
+        "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=200813"
+      },
+      {
+        "title": "사상 첫 전력망 민간 개방·RPS 폐지 상임위 통과…\"에너지 대전환 시동\"",
+        "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4416210"
+      },
+      {
+        "title": "‘AI 시대, 국가 전력망 확충 더욱 속도 낸다’ - 에너지데일리",
+        "url": "http://www.energydaily.co.kr/news/articleView.html?idxno=167448"
+      }
+    ]
+  },
+  "defense": {
+    "industry": "defense",
+    "headline_en": "New regulations for foreign staff in defense firms",
+    "summary_en": [
+      "South Korea will require approval for hiring foreign staff.",
+      "This includes dual-national employees in defense companies.",
+      "The changes aim to prevent technology leaks and protect national security."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The new approval requirements for foreign hires increase regulatory hurdles for foreign companies."
+    },
+    "korean_quote": {
+      "text_ko": "방위사업법 및 방위산업기술 보호법 개정안이 2026. 3. 10. 입법화되어 2026. 9. 11.부터 시행됩니다.",
+      "source_title": "방위사업법, 방위산업기술 보호법 개정 < 대륙아주 < Into the Lawfirm < 로캣센터 < 기사본문 - 법률신문",
+      "source_url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218766"
+    },
+    "sources": [
+      {
+        "title": "South Korea to require approval for hiring foreign, dual-national staff at defense firms - The Korea Herald",
+        "url": "https://www.koreaherald.com/article/10693807"
+      },
+      {
+        "title": "방위사업법, 방위산업기술 보호법 개정 < 대륙아주 < Into the Lawfirm < 로캣센터 < 기사본문 - 법률신문",
+        "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218766"
+      },
+      {
+        "title": "권향엽 \"인수·합병 통한 기술주권 침탈 방지해야\" - 아시아경제",
+        "url": "https://www.asiae.co.kr/article/2025062009073943864"
+      }
+    ]
+  },
+  "fintech": {
+    "industry": "fintech",
+    "headline_en": "New regulations enhance fintech oversight in Korea",
+    "summary_en": [
+      "Korean National Assembly passed amendments to the Electronic Financial Transactions Act.",
+      "New rules aim to protect settlement funds and enhance management oversight.",
+      "Changes include higher capital requirements for large payment gateway operators."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The new regulations increase oversight and compliance requirements for fintech companies."
+    },
+    "korean_quote": {
+      "text_ko": "PG업 정산자금을 선불충전금과 동일한 방법으로 외부관리하도록 규율",
+      "source_title": "보도자료 - 금융위원회",
+      "source_url": "https://www.fsc.go.kr/no010101/87151"
+    },
+    "sources": [
+      {
+        "title": "보도자료 - 금융위원회",
+        "url": "https://www.fsc.go.kr/no010101/87151"
+      },
+      {
+        "title": "정산자금 보호 및 건전경영 강화를 위한 전자금융거래법 개정안 국회 본회의 통과 - Lexology",
+        "url": "https://www.lexology.com/library/detail.aspx?g=1355e3a1-84e9-44cc-8d94-073ec3724755"
+      },
+      {
+        "title": "25년 묵은 금융지주법 손질 …\"핀테크 지분 15%까지 허용\" - 매일경제",
+        "url": "https://www.mk.co.kr/news/economy/11213193"
+      }
+    ]
+  },
+  "ecommerce": {
+    "industry": "ecommerce",
+    "headline_en": "KFTC proposes amendments to e-commerce regulations",
+    "summary_en": [
+      "KFTC announced draft amendments to the E-Commerce Act.",
+      "New regulations clarify domestic agent designation for overseas businesses.",
+      "Increased penalties for repeat offenders are also proposed."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The proposed amendments increase regulatory requirements for foreign e-commerce businesses."
+    },
+    "korean_quote": {
+      "text_ko": "해외 통신판매업자통신판매중개업자의 국내대리인 지정 기준을 최초로 구체화하였습니다.",
+      "source_title": "전자상거래법 시행령 개정안 입법예고: 해외사업자 국내대리인 지정 기준 공개",
+      "source_url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218003"
+    },
+    "sources": [
+      {
+        "title": "KFTC Proposes Amendments to Sub-regulations of the E-Commerce Act - Kim & Chang",
+        "url": "https://www.kimchang.com/en/insights/detail.kc?idx=34402&sch_section=4"
+      },
+      {
+        "title": "Korea proposes amendments to implementing regulations under the e-commerce act - Lexology",
+        "url": "https://www.lexology.com/library/detail.aspx?g=64b52836-9bc1-4c08-ba4c-e9a3a1d05c6b"
+      },
+      {
+        "title": "전자상거래법 시행령 개정안 입법예고: 해외사업자 국내대리인 지정 기준 공개 < 화우 < Into the Lawfirm < 로캣센터 < 기사본문 - 법률신문",
+        "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218003"
+      }
+    ]
+  },
+  "gaming": {
+    "industry": "gaming",
+    "headline_en": "New regulations for foreign gaming companies in Korea",
+    "summary_en": [
+      "Foreign game companies must appoint domestic representatives.",
+      "Amendments to the Game Industry Promotion Act passed.",
+      "Increased penalties for misleading information on items."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The new requirement for foreign companies to appoint domestic representatives increases regulatory complexity and risk."
+    },
+    "korean_quote": {
+      "text_ko": "해외게임사 ‘국내대리인 지정제’, 게임사 역차별 해소 실효성 의문",
+      "source_title": "'확률형 아이템' 정보공개 이상무...해외게임사 '국내 대리인제' 글쎄",
+      "source_url": "https://www.m-economynews.com/news/article.html?no=58564"
+    },
+    "sources": [
+      {
+        "title": "South Korean National Assembly passed an amendment to the Game Industry Promotion Act, mandating that foreign game companies appoint a domestic representative",
+        "url": "https://www.lexology.com/library/detail.aspx?g=b70e846a-1922-44b0-8889-b68ee80f0894"
+      },
+      {
+        "title": "[게임위드인] 확률형 아이템 규제…게임사에 돌아온 부메랑 | 연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20250801141100017"
+      },
+      {
+        "title": "\"확률형 아이템만으론 부족\"…이도경 사무총장, `게임법 개정안` 보완 필요성 제기 - 디지털데일리",
+        "url": "https://www.ddaily.co.kr/page/view/2026041317404436953"
+      }
+    ]
+  },
+  "biotech": {
+    "industry": "biotech",
+    "headline_en": "K-Bio Regulatory Changes Impacting Industry Landscape",
+    "summary_en": [
+      "Recent amendments to the Advanced Regenerative Medicine Act are now in effect.",
+      "These changes aim to enhance research, development, and commercialization support.",
+      "The regulatory environment is shifting towards a more supportive framework."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "down",
+      "delta": 3,
+      "rationale_en": "The amendments are expected to facilitate easier access to advanced therapies."
+    },
+    "korean_quote": {
+      "text_ko": "이번 제도 변화가 단순한 규제 개편을 넘어 연구개발과 투자, 상용화 구조 전반에 영향을 미칠 것으로 보고 있다.",
+      "source_title": "첨단재생바이법 개정 본격 시행…바이오 산업 지형 변화 주목",
+      "source_url": "https://www.kndaily.co.kr/news/articleView.html?idxno=310470"
+    },
+    "sources": [
+      {
+        "title": "첨단재생바이법 개정 본격 시행…바이오 산업 지형 변화 주목",
+        "url": "https://www.kndaily.co.kr/news/articleView.html?idxno=310470"
+      },
+      {
+        "title": "K-바이오 규제 개선 1년, 무엇이 달라졌나?",
+        "url": "https://www.monews.co.kr/news/articleView.html?idxno=411548"
+      },
+      {
+        "title": "첨단재생의료 치료환경 조성…바이오 메가특구 규제특례 도입도",
+        "url": "https://www.asiae.co.kr/article/2026060110225675968"
+      }
+    ]
+  },
+  "semiconductor": {
+    "industry": "semiconductor",
+    "headline_en": "Korea strengthens semiconductor industry regulations",
+    "summary_en": [
+      "New legislation aims to enhance semiconductor competitiveness.",
+      "Government collaborates with industry on export controls.",
+      "Recent laws support comprehensive semiconductor industry development."
+    ],
+    "impact": {
+      "risk_component": "Pending bills",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The introduction of new legislation and export controls increases regulatory scrutiny for foreign companies."
+    },
+    "korean_quote": {
+      "text_ko": "반도체산업 경쟁력 강화 및 지원에 관한 특별법(이하 반도체특별법) 제정안이 29일 국회 본회의를 통과했다.",
+      "source_title": "반도체특별법 국회 본회의 통과…\"K-반도체 초격차 유지·강화\" - 디지털데일리",
+      "source_url": "https://www.ddaily.co.kr/page/view/2026012916332688781"
+    },
+    "sources": [
+      {
+        "title": "국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법 일부개정법률안 - Uisadang",
+        "url": "https://uisadang.dev/bills/PRC_R2Q4O0X6Y2W4U1T7B2C6D2C9A1B5J0"
+      },
+      {
+        "title": "산업통상부, 반도체 수출통제, 정부와 기업이 함께 대응한다",
+        "url": "http://www.gen.or.kr/m/page/view.php?no=9942"
+      },
+      {
+        "title": "반도체특별법 국회 본회의 통과…\"K-반도체 초격차 유지·강화\" - 디지털데일리",
+        "url": "https://www.ddaily.co.kr/page/view/2026012916332688781"
+      }
+    ]
+  },
+  "logistics": {
+    "industry": "logistics",
+    "headline_en": "New laws enhance logistics sector in Korea",
+    "summary_en": [
+      "The National Assembly passed the 'International Logistics Promotion Zone' law.",
+      "This law aims to establish high-value logistics hubs linked to ports and airports.",
+      "Regulatory changes are expected to boost foreign investment in logistics."
+    ],
+    "impact": {
+      "risk_component": "Political events",
+      "direction": "up",
+      "delta": 5,
+      "rationale_en": "The passage of new laws creates a more favorable regulatory environment for logistics."
+    },
+    "korean_quote": {
+      "text_ko": "국회가 항만·공항·철도를 연계한 국제 물류거점 육성을 위한 법적 기반을 마련했다.",
+      "source_title": "민홍철 의원 대표발의 '국제물류진흥지역 특별법' 본회의 통과 | 아주경제",
+      "source_url": "https://www.ajunews.com/view/20260310203641052"
+    },
+    "sources": [
+      {
+        "title": "민홍철 의원 대표발의 '국제물류진흥지역 특별법' 본회의 통과 | 아주경제",
+        "url": "https://www.ajunews.com/view/20260310203641052"
+      },
+      {
+        "title": "물류정책기본법 일부개정법률안 - Uisadang",
+        "url": "https://uisadang.dev/bills/PRC_B2X6X0W1W1U2V1U6U5C8D1B9B1Z7Y0"
+      },
+      {
+        "title": "국제물류진흥지역 지정 및 운영에 관한 특별법안 - Uisadang",
+        "url": "https://uisadang.dev/bills/PRC_A2C4Z0I6F2E0M1K5I3R2Q1M0L2R6R8"
+      }
+    ]
+  }
+}

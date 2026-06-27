@@ -105,6 +105,42 @@ export interface Political {
   needs_verification: boolean;
 }
 
+// ── AI compliance agent (Exa + OpenAI) ──────────────────────────────
+export type RiskComponent =
+  | "Pending bills"
+  | "Ownership-cap changes"
+  | "Political events"
+  | "Media sentiment";
+
+export interface AgentSource {
+  title: string;
+  url: string;
+}
+
+export interface AgentBrief {
+  industry: IndustryCode;
+  headline_en: string;
+  summary_en: string[]; // ~3 lines
+  impact: {
+    risk_component: RiskComponent;
+    direction: "up" | "down" | "flat";
+    delta: number; // suggested score change, -8..8
+    rationale_en: string;
+  };
+  korean_quote: { text_ko: string; source_title: string; source_url: string };
+  sources: AgentSource[];
+}
+
+export interface AgentResponse {
+  brief: AgentBrief;
+  meta: {
+    source: "live" | "cache" | "fallback";
+    elapsed_ms: number;
+    model?: string;
+    note?: string;
+  };
+}
+
 // REGCON level metadata (labels + token colors) for the gauge/badges.
 export const REGCON_META: Record<
   Regcon,
