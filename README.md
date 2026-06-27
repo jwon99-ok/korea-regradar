@@ -2,9 +2,9 @@
 
 <br />
 
-# 🇰🇷 Korea RegRadar
+# 🇰🇷 Korea RegRadar 
 
-### Korean regulation, decoded into English — in real time.
+### Korean regulation, decoded into English for Foreign investors/start-up founders - in real time.
 
 *Industry regulations, foreign-ownership limits, and the political landscape, made legible for foreign founders and investors entering the Korean market.*
 
@@ -31,7 +31,7 @@
 
 ## The problem
 
-I've watched foreign founders get blocked entering Korea — not by the market, but by **information they couldn't read**. Industry regulations, foreign-ownership caps, and pending legislation are all in Korean, scattered across the National Assembly, ministries, and the legal portal, and they shift with the political landscape.
+As an intern working in venture building company bridging the SEA and South Korea, I've watched foreign founders get blocked entering Korea - not by the market, but by **information they couldn't read**. Industry regulations, foreign-ownership caps, and pending legislation are all in Korean, scattered across the National Assembly, ministries, and the legal portal, and they shift with the political landscape.
 
 Every company entering Korea hires someone to track this **by hand**. It's slow, expensive, and always behind.
 
@@ -39,7 +39,7 @@ Every company entering Korea hires someone to track this **by hand**. It's slow,
 
 **Korea RegRadar replaces that manual compliance workflow with an AI agent.** It monitors primary Korean sources, translates and structures them into English, and scores regulatory risk per industry — turning a human research task into an automated, agent-driven operation.
 
-A **B2B compliance tool**: every foreign company, VC, or law firm entering Korea is a customer — and the same agent scales to any regulated market, anywhere the regulatory information gap blocks founders.
+A **B2B compliance tool**: every foreign company, VC, or law firm entering Korea is a customer — and the same agent architecture scales to any regulated market across Southeast Asia (Vietnam, Indonesia, and beyond) where the regulatory information gap blocks founders.
 
 ---
 
@@ -115,6 +115,6 @@ All data is shown with its source link and an as-of date. Unverified political i
 
 Designed and directed by the team, built with Claude Code as an AI pair-builder in a single day.
 
-\`#supcareer\` · \`#build2026\` · \`#hackathon\` · \`#PetaniAI\`
+`#supcareer` · `#build2026` · `#hackathon` · `#PetaniAI`
 
 </div>
