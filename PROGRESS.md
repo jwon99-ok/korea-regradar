@@ -3,7 +3,7 @@
 > 매 작업 시작 시 이 파일부터 읽는다. 매 Unit 종료 시 체크 + 로그 갱신.
 
 ## 체크리스트
-- [ ] **H0** 스캐폴드 (Next.js 15 + Tailwind + shadcn + 디자인 토큰 + 다크 셸/네비)
+- [x] **H0** 스캐폴드 (Next.js 15 + Tailwind + shadcn + 디자인 토큰 + 다크 셸/네비)
 - [ ] **H1** 시드 데이터 (`src/data/*.json`, 한국 실데이터)
 - [ ] **H2** 히어로: Regulatory Risk Index 게이지 ★
 - [ ] **H6** AI 컴플라이언스 에이전트 (Exa+OpenAI) ★ ← 채점 30%, 핵심
@@ -35,3 +35,4 @@
 > 클로드가 Unit 끝낼 때마다 한 줄씩 추가. 형식: `[시각] Hx — 완료 내용 / 막힌 점`
 
 - (예) `[10:25] H0 — 스캐폴드 완료, 다크 테마 적용. shadcn init 시 경로 별칭 @/* 확인.`
+- `[10:55] H0 — Next 16(App Router)+Tailwind v4+TS 스캐폴드 완료. globals.css에 디자인 토큰 CSS 변수(@theme inline 매핑), Inter/IBM Plex Mono 폰트, 다크 OSINT 셸+상단 네비(3 라우트 /,/regulations,/political). 3 라우트 모두 200, pnpm build 통과. / 막힌 점: pnpm 11.9가 sharp 빌드 스크립트를 ignored 처리→Next 16 deps check가 exit 1. pnpm-workspace.yaml에 allowBuilds: {sharp: true} 넣어 해결. shadcn은 components.json만 두고 컴포넌트는 유닛별로 추가 예정.`

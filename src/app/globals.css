@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* ── Korea RegRadar — OSINT dark design tokens (SPEC §6) ───────────── */
+:root {
+  --bg: #0b0e14;
+  --surface: #121722;
+  --surface-2: #1a2130;
+  --text: #e6edf3;
+  --muted: #8b98a9;
+  --border: #243044;
+  --accent: #4da3ff;
+  --kr: #e4572e; /* Korea accent */
+
+  /* REGCON ladder (DEFCON-style risk levels) */
+  --regcon-5: #2ecc71;
+  --regcon-4: #a3cb38;
+  --regcon-3: #f1c40f;
+  --regcon-2: #e67e22;
+  --regcon-1: #e74c3c;
+}
+
+/* Map tokens → Tailwind v4 utilities (bg-bg, text-muted, border-border, …) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-kr: var(--kr);
+  --color-regcon-5: var(--regcon-5);
+  --color-regcon-4: var(--regcon-4);
+  --color-regcon-3: var(--regcon-3);
+  --color-regcon-2: var(--regcon-2);
+  --color-regcon-1: var(--regcon-1);
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numeric / data values use the monospace face */
+.tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
