@@ -115,6 +115,6 @@ All data is shown with its source link and an as-of date. Unverified political i
 
 Designed and directed by the team, built with Claude Code as an AI pair-builder in a single day.
 
-`#supcareer\` · `#build2026` · `#hackathon` · `#PetaniAI`
+`#supcareer` · `#build2026` · `#hackathon` · `#PetaniAI`
 
 </div>
