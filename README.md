@@ -31,7 +31,7 @@
 
 ## The problem
 
-As an intern working in venture building company bridging the SEA<->S.Korea, I've watched foreign founders get blocked entering Korea - not by the market, but by **information they couldn't read**. Industry regulations, foreign-ownership caps, and pending legislation are all in Korean, scattered across the National Assembly, ministries, and the legal portal, and they shift with the political landscape.
+As an intern working in venture building company bridging the SEA and S.Korea, I've watched foreign founders get blocked entering Korea - not by the market, but by **information they couldn't read**. Industry regulations, foreign-ownership caps, and pending legislation are all in Korean, scattered across the National Assembly, ministries, and the legal portal, and they shift with the political landscape.
 
 Every company entering Korea hires someone to track this **by hand**. It's slow, expensive, and always behind.
 
