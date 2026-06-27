@@ -20,7 +20,7 @@ export function SiteFooter() {
         </div>
 
         <div className="space-y-1 sm:text-right">
-          <p className="tabular text-text">© 2026 jwon99-ok · Korea RegRadar</p>
+          <p className="tabular text-text">© 2026 Juwon Ock · Korea RegRadar</p>
           <p className="max-w-md">
             Not legal advice — analytical interpretation of public Korean
             sources. Verify against primary sources before relying.
