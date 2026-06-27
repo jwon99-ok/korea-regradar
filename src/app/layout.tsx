@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SiteNav } from "@/components/site-nav";
+import { SiteFooter } from "@/components/site-footer";
 import "./globals.css";
 
 // Self-hosted woff2 (vendored in ./fonts) — no network / Google Fonts at
@@ -39,9 +40,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${plexMono.variable}`}>
-      <body className="min-h-screen antialiased">
+      <body className="flex min-h-screen flex-col antialiased">
         <SiteNav />
-        <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6">{children}</main>
+        <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );
