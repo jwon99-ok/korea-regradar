@@ -1,0 +1,14 @@
+[
+  { "code": "telecom", "name_en": "Telecom" },
+  { "code": "broadcasting", "name_en": "Broadcasting" },
+  { "code": "aviation", "name_en": "Air Transport" },
+  { "code": "news_media", "name_en": "News / Print Media" },
+  { "code": "power", "name_en": "Power Generation" },
+  { "code": "defense", "name_en": "Defense" },
+  { "code": "fintech", "name_en": "Fintech" },
+  { "code": "ecommerce", "name_en": "E-commerce" },
+  { "code": "gaming", "name_en": "Gaming / Content" },
+  { "code": "biotech", "name_en": "Biotech / Pharma" },
+  { "code": "semiconductor", "name_en": "Semiconductors" },
+  { "code": "logistics", "name_en": "Logistics" }
+]
