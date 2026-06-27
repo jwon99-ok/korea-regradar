@@ -1,11 +1,19 @@
-import { ScreenStub } from "@/components/screen-stub";
+import type { FdiLimit, Industry, Regulation } from "@/types";
+import industriesData from "@/data/industries.json";
+import fdiData from "@/data/fdi_limits.json";
+import regulationsData from "@/data/regulations.json";
+import { ExplorerScreen } from "@/components/explorer-screen";
+
+const industries = industriesData as Industry[];
+const fdiLimits = fdiData as FdiLimit[];
+const regulations = regulationsData as Regulation[];
 
 export default function RegulationsPage() {
   return (
-    <ScreenStub
-      kicker="Foreign Investment Explorer"
-      title="What can a foreign company actually own here?"
-      blurb="Industry-by-industry foreign-ownership limits as a traffic-light signal — green, capped, or restricted — each card backed by the Korean source text and an as-of date."
+    <ExplorerScreen
+      industries={industries}
+      fdiLimits={fdiLimits}
+      regulations={regulations}
     />
   );
 }
