@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ArrowDownRight, ArrowUpRight, Minus } from "lucide-react";
 import type {
   AgentResponse,
   Industry,
@@ -67,6 +68,14 @@ export function RiskIndexScreen({
   const color = REGCON_HEX[displayRegcon];
   const asOf = risk.triggers[0]?.date;
 
+  // Trend = movement across the recent model readings (oldest → newest).
+  const spark = risk.sparkline;
+  const trendStart = spark[0];
+  const trendNow = spark[spark.length - 1];
+  const trendDelta = trendNow - trendStart;
+  const trendColor =
+    trendDelta > 0 ? REGCON_HEX[2] : trendDelta < 0 ? REGCON_HEX[5] : "var(--muted)";
+
   function selectIndustry(code: IndustryCode) {
     setSelected(code);
     setAgent(null); // previous brief no longer applies
@@ -131,16 +140,41 @@ export function RiskIndexScreen({
             <RunAgentButton industry={selected} onResult={setAgent} />
           </div>
 
-          <div className="space-y-1.5 border-t border-border pt-4">
-            <div className="flex items-center justify-between">
-              <span className="text-xs uppercase tracking-widest text-muted">
-                8-period trend
-              </span>
-              <span className="tabular text-xs text-muted">
-                model estimate · needs verification
-              </span>
+          <div className="space-y-2 border-t border-border pt-4">
+            <div className="flex items-end justify-between gap-3">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-muted">
+                  Risk-score trend
+                </p>
+                <p className="text-[11px] text-muted">
+                  last {spark.length} model readings · needs verification
+                </p>
+              </div>
+              <div className="text-right">
+                <span
+                  className="tabular inline-flex items-center gap-0.5 text-sm font-semibold"
+                  style={{ color: trendColor }}
+                >
+                  {trendDelta > 0 ? (
+                    <ArrowUpRight className="h-3.5 w-3.5" />
+                  ) : trendDelta < 0 ? (
+                    <ArrowDownRight className="h-3.5 w-3.5" />
+                  ) : (
+                    <Minus className="h-3.5 w-3.5" />
+                  )}
+                  {trendDelta > 0 ? "+" : ""}
+                  {trendDelta} pts
+                </span>
+                <p className="tabular text-[11px] text-muted">
+                  {trendStart} → {trendNow} / 100
+                </p>
+              </div>
             </div>
-            <RiskSparkline data={risk.sparkline} color={color} />
+            <RiskSparkline data={spark} color={color} />
+            <div className="tabular flex justify-between text-[10px] text-muted">
+              <span>~8 periods ago</span>
+              <span>now</span>
+            </div>
           </div>
         </Panel>
 
