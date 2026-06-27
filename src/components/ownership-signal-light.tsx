@@ -99,9 +99,11 @@ export function OwnershipSignalLight({
           href={fdi.source_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-0.5 text-xs text-accent hover:underline"
+          className="inline-flex shrink-0 items-center gap-0.5 text-xs text-accent hover:underline"
         >
-          Source <ArrowUpRight className="h-3 w-3" />
+          {/* Be honest: an unverified link is the portal home, not the primary text. */}
+          {fdi.needs_verification ? "Portal" : "Source"}
+          <ArrowUpRight className="h-3 w-3" />
         </a>
       </div>
     </div>

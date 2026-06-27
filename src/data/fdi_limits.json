@@ -8,7 +8,7 @@
     "legal_basis": "Foreign Investment Promotion Act",
     "source_url": "https://www.investkorea.org/",
     "as_of": "2025",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "industry": "fintech",
@@ -19,7 +19,7 @@
     "legal_basis": "FSC licensing",
     "source_url": "https://www.investkorea.org/",
     "as_of": "2025",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "industry": "telecom",
@@ -28,8 +28,8 @@
     "note_en": "Wired/wireless/satellite telecom capped at 49%",
     "source_ko": "유·무선 및 위성통신업 49% 이하 허용",
     "legal_basis": "Telecommunications Business Act",
-    "source_url": "https://www.investkorea.org/",
-    "as_of": "2025",
+    "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulId=25132&efYd=0",
+    "as_of": "2024-09-19",
     "needs_verification": false
   },
   {
@@ -39,8 +39,8 @@
     "note_en": "Cable/satellite broadcasting capped at 49%",
     "source_ko": "유선방송업·위성방송업 49% 이하 허용",
     "legal_basis": "Broadcasting Act",
-    "source_url": "https://www.investkorea.org/",
-    "as_of": "2025",
+    "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulId=25132&efYd=0",
+    "as_of": "2024-09-19",
     "needs_verification": false
   },
   {
@@ -50,8 +50,8 @@
     "note_en": "Domestic & air passenger/cargo transport under 50%",
     "source_ko": "내항 및 항공의 여객·화물 운송업 50% 미만",
     "legal_basis": "Aviation Business Act",
-    "source_url": "https://www.investkorea.org/",
-    "as_of": "2025",
+    "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulId=25132&efYd=0",
+    "as_of": "2024-09-19",
     "needs_verification": false
   },
   {
@@ -61,8 +61,8 @@
     "note_en": "News agencies under 25%; newspaper publishing under 50%",
     "source_ko": "뉴스제공업 25% 미만 / 신문발행업 50% 미만",
     "legal_basis": "Act on the Promotion of Newspapers",
-    "source_url": "https://www.investkorea.org/",
-    "as_of": "2025",
+    "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulId=25132&efYd=0",
+    "as_of": "2024-09-19",
     "needs_verification": false
   },
   {
@@ -72,8 +72,8 @@
     "note_en": "Hydro/thermal/solar generation under 30% of national capacity",
     "source_ko": "발전설비의 30% 미만 허용",
     "legal_basis": "Electric Utility Act",
-    "source_url": "https://www.investkorea.org/",
-    "as_of": "2025",
+    "source_url": "https://www.law.go.kr/LSW/admRulLsInfoP.do?admRulId=25132&efYd=0",
+    "as_of": "2024-09-19",
     "needs_verification": false
   },
   {
@@ -85,7 +85,7 @@
     "legal_basis": "Foreign Investment Promotion Act, Annex",
     "source_url": "https://www.investkorea.org/",
     "as_of": "2025",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "industry": "gaming",
