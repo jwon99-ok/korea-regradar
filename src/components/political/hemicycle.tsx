@@ -29,8 +29,10 @@ export function Hemicycle({ seats }: { seats: PoliticalSeat[] }) {
           return (
             <motion.circle
               key={i}
-              cx={s.x}
-              cy={s.y}
+              // Round trig output so server- and client-rendered coords match
+              // exactly (avoids React hydration mismatch warnings).
+              cx={s.x.toFixed(3)}
+              cy={s.y.toFixed(3)}
               r={6}
               fill={s.party.color}
               initial={{ opacity: 0, scale: 0 }}
