@@ -73,7 +73,10 @@ export function Hemicycle({ seats }: { seats: PoliticalSeat[] }) {
               <span className="tabular text-muted">
                 {p.seats}
                 <span className="ml-1 text-[11px]">
-                  · {((p.seats / total) * 100).toFixed(0)}%
+                  {(() => {
+                    const pct = (p.seats / total) * 100;
+                    return `· ${pct < 0.5 ? "<1" : pct.toFixed(0)}%`;
+                  })()}
                 </span>
               </span>
             </button>

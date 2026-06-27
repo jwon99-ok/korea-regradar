@@ -1,26 +1,29 @@
 {
   "assembly_en": "National Assembly (300 seats)",
-  "as_of": "22nd National Assembly · elected Apr 2024",
+  "as_of": "22nd National Assembly · as convened (elected Apr 2024)",
   "blocs": [
     {
-      "name_en": "Democratic Party & allied bloc",
-      "power": 188,
-      "color": "#4DA3FF",
+      "name_en": "Democratic Party (incl. allied list)",
+      "power": 175,
+      "color": "#152484",
       "needs_verification": true
     },
     {
-      "name_en": "People Power Party bloc",
+      "name_en": "People Power Party (incl. allied list)",
       "power": 108,
-      "color": "#E4572E",
+      "color": "#E61E2B",
       "needs_verification": true
     }
   ],
   "seats": [
-    { "party_en": "Democratic Party", "seats": 170, "color": "#4DA3FF" },
-    { "party_en": "People Power Party", "seats": 108, "color": "#E4572E" },
-    { "party_en": "Rebuilding Korea & others", "seats": 22, "color": "#8B98A9" }
+    { "party_en": "Democratic Party", "seats": 175, "color": "#152484" },
+    { "party_en": "Rebuilding Korea Party", "seats": 12, "color": "#0073CF" },
+    { "party_en": "Progressive Party", "seats": 1, "color": "#D6001C" },
+    { "party_en": "New Future Party", "seats": 1, "color": "#00B4B4" },
+    { "party_en": "Reform Party", "seats": 3, "color": "#FF7210" },
+    { "party_en": "People Power Party", "seats": 108, "color": "#E61E2B" }
   ],
-  "disclaimer_en": "Analytical interpretation · public sources (Open Assembly) · as-of 22nd National Assembly. Composition shifts over time — verify against the official roster before relying.",
+  "disclaimer_en": "Analytical interpretation · seat counts per public sources (Wikipedia / NEC, as-convened) · 22nd National Assembly. Composition shifts over time — verify against the official roster before relying.",
   "source_url": "https://open.assembly.go.kr/portal/openapi/",
   "needs_verification": true
 }
