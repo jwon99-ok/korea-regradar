@@ -73,7 +73,7 @@ export function RunAgentButton({
         disabled={loading}
         className={cn(
           "inline-flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-colors",
-          "bg-accent text-[#06121f] hover:bg-accent/90 disabled:cursor-not-allowed disabled:opacity-80",
+          "bg-accent text-[#06121f] hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-bg disabled:cursor-not-allowed disabled:opacity-80",
         )}
       >
         {loading ? (

@@ -87,6 +87,14 @@ export function AgentBrief({ data }: { data: AgentResponse }) {
           <p className="text-sm text-kr" lang="ko">
             “{brief.korean_quote.text_ko}”
           </p>
+          {brief.korean_quote.text_en && (
+            <p className="mt-0.5 text-xs italic text-muted">
+              “{brief.korean_quote.text_en}”
+              <span className="ml-1 not-italic opacity-70">
+                — translation
+              </span>
+            </p>
+          )}
           {brief.korean_quote.source_url && (
             <a
               href={brief.korean_quote.source_url}

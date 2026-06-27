@@ -3,19 +3,41 @@
     "industry": "telecom",
     "score": 72,
     "regcon": 2,
-    "sparkline": [38, 40, 44, 50, 58, 64, 70, 72],
+    "sparkline": [
+      38,
+      40,
+      44,
+      50,
+      58,
+      64,
+      70,
+      72
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 28 },
-      { "label_en": "Ownership-cap changes", "value": 22 },
-      { "label_en": "Political events", "value": 14 },
-      { "label_en": "Media sentiment", "value": 8 }
+      {
+        "label_en": "Pending bills",
+        "value": 28
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 22
+      },
+      {
+        "label_en": "Political events",
+        "value": 14
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 8
+      }
     ],
     "triggers": [
       {
         "title_en": "Govt reviews easing foreign equity caps in telecom/aviation/broadcasting",
         "source_ko": "정부, 통신·항공·방송 외국인 지분 한도 완화 검토",
         "date": "2026-06-15",
-        "source_url": "https://www.hankyung.com/"
+        "source_url": "https://www.hankyung.com/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -24,19 +46,41 @@
     "industry": "broadcasting",
     "score": 68,
     "regcon": 2,
-    "sparkline": [42, 44, 46, 52, 58, 62, 66, 68],
+    "sparkline": [
+      42,
+      44,
+      46,
+      52,
+      58,
+      62,
+      66,
+      68
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 20 },
-      { "label_en": "Ownership-cap changes", "value": 24 },
-      { "label_en": "Political events", "value": 16 },
-      { "label_en": "Media sentiment", "value": 8 }
+      {
+        "label_en": "Pending bills",
+        "value": 20
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 24
+      },
+      {
+        "label_en": "Political events",
+        "value": 16
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 8
+      }
     ],
     "triggers": [
       {
         "title_en": "Media-ownership rules revisited amid platform consolidation",
         "source_ko": "방송·플랫폼 소유 규제 재논의",
         "date": "2026-06-10",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -45,19 +89,41 @@
     "industry": "aviation",
     "score": 55,
     "regcon": 3,
-    "sparkline": [40, 42, 45, 48, 50, 52, 54, 55],
+    "sparkline": [
+      40,
+      42,
+      45,
+      48,
+      50,
+      52,
+      54,
+      55
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 18 },
-      { "label_en": "Ownership-cap changes", "value": 16 },
-      { "label_en": "Political events", "value": 12 },
-      { "label_en": "Media sentiment", "value": 9 }
+      {
+        "label_en": "Pending bills",
+        "value": 18
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 16
+      },
+      {
+        "label_en": "Political events",
+        "value": 12
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 9
+      }
     ],
     "triggers": [
       {
         "title_en": "Ministry signals review of airline foreign-equity threshold",
         "source_ko": "국토부, 항공사 외국인 지분 기준 재검토 신호",
         "date": "2026-05-28",
-        "source_url": "https://www.hankyung.com/"
+        "source_url": "https://www.hankyung.com/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -66,19 +132,41 @@
     "industry": "news_media",
     "score": 50,
     "regcon": 3,
-    "sparkline": [44, 45, 46, 47, 48, 49, 50, 50],
+    "sparkline": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      50
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 14 },
-      { "label_en": "Ownership-cap changes", "value": 14 },
-      { "label_en": "Political events", "value": 14 },
-      { "label_en": "Media sentiment", "value": 8 }
+      {
+        "label_en": "Pending bills",
+        "value": 14
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 14
+      },
+      {
+        "label_en": "Political events",
+        "value": 14
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 8
+      }
     ],
     "triggers": [
       {
         "title_en": "Debate over foreign capital in news platforms",
         "source_ko": "뉴스 플랫폼 외국자본 참여 논쟁",
         "date": "2026-06-02",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -87,19 +175,41 @@
     "industry": "power",
     "score": 47,
     "regcon": 3,
-    "sparkline": [30, 33, 36, 40, 43, 45, 46, 47],
+    "sparkline": [
+      30,
+      33,
+      36,
+      40,
+      43,
+      45,
+      46,
+      47
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 16 },
-      { "label_en": "Ownership-cap changes", "value": 13 },
-      { "label_en": "Political events", "value": 12 },
-      { "label_en": "Media sentiment", "value": 6 }
+      {
+        "label_en": "Pending bills",
+        "value": 16
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 13
+      },
+      {
+        "label_en": "Political events",
+        "value": 12
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 6
+      }
     ],
     "triggers": [
       {
         "title_en": "Renewables foreign-investment screening tightened",
         "source_ko": "재생에너지 외국인투자 심사 강화",
         "date": "2026-05-30",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -108,19 +218,41 @@
     "industry": "defense",
     "score": 84,
     "regcon": 1,
-    "sparkline": [70, 72, 74, 77, 80, 82, 83, 84],
+    "sparkline": [
+      70,
+      72,
+      74,
+      77,
+      80,
+      82,
+      83,
+      84
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 18 },
-      { "label_en": "Ownership-cap changes", "value": 30 },
-      { "label_en": "Political events", "value": 26 },
-      { "label_en": "Media sentiment", "value": 10 }
+      {
+        "label_en": "Pending bills",
+        "value": 18
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 30
+      },
+      {
+        "label_en": "Political events",
+        "value": 26
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 10
+      }
     ],
     "triggers": [
       {
         "title_en": "Tighter foreign-investment screening on defense & dual-use tech",
         "source_ko": "방산·이중용도 기술 외국인투자 심사 강화",
         "date": "2026-06-18",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -129,19 +261,41 @@
     "industry": "fintech",
     "score": 70,
     "regcon": 2,
-    "sparkline": [48, 52, 56, 60, 64, 67, 69, 70],
+    "sparkline": [
+      48,
+      52,
+      56,
+      60,
+      64,
+      67,
+      69,
+      70
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 30 },
-      { "label_en": "Ownership-cap changes", "value": 12 },
-      { "label_en": "Political events", "value": 16 },
-      { "label_en": "Media sentiment", "value": 12 }
+      {
+        "label_en": "Pending bills",
+        "value": 30
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 12
+      },
+      {
+        "label_en": "Political events",
+        "value": 16
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 12
+      }
     ],
     "triggers": [
       {
         "title_en": "Electronic Financial Transactions Act amendment advances in committee",
         "source_ko": "전자금융거래법 개정안 상임위 통과",
         "date": "2026-06-12",
-        "source_url": "https://www.hankyung.com/"
+        "source_url": "https://www.hankyung.com/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -150,19 +304,41 @@
     "industry": "ecommerce",
     "score": 33,
     "regcon": 4,
-    "sparkline": [28, 29, 30, 31, 32, 32, 33, 33],
+    "sparkline": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      32,
+      33,
+      33
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 12 },
-      { "label_en": "Ownership-cap changes", "value": 6 },
-      { "label_en": "Political events", "value": 9 },
-      { "label_en": "Media sentiment", "value": 6 }
+      {
+        "label_en": "Pending bills",
+        "value": 12
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 6
+      },
+      {
+        "label_en": "Political events",
+        "value": 9
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 6
+      }
     ],
     "triggers": [
       {
         "title_en": "Platform competition bill discussion continues",
         "source_ko": "플랫폼 경쟁촉진법 논의 지속",
         "date": "2026-05-20",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -171,19 +347,41 @@
     "industry": "gaming",
     "score": 61,
     "regcon": 2,
-    "sparkline": [40, 44, 48, 52, 55, 58, 60, 61],
+    "sparkline": [
+      40,
+      44,
+      48,
+      52,
+      55,
+      58,
+      60,
+      61
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 22 },
-      { "label_en": "Ownership-cap changes", "value": 8 },
-      { "label_en": "Political events", "value": 16 },
-      { "label_en": "Media sentiment", "value": 15 }
+      {
+        "label_en": "Pending bills",
+        "value": 22
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 8
+      },
+      {
+        "label_en": "Political events",
+        "value": 16
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 15
+      }
     ],
     "triggers": [
       {
         "title_en": "Loot-box disclosure enforcement expands to overseas operators",
         "source_ko": "확률형 아이템 공시 의무, 해외 사업자로 확대",
         "date": "2026-06-05",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -192,19 +390,41 @@
     "industry": "biotech",
     "score": 58,
     "regcon": 3,
-    "sparkline": [44, 46, 48, 50, 53, 55, 57, 58],
+    "sparkline": [
+      44,
+      46,
+      48,
+      50,
+      53,
+      55,
+      57,
+      58
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 20 },
-      { "label_en": "Ownership-cap changes", "value": 12 },
-      { "label_en": "Political events", "value": 16 },
-      { "label_en": "Media sentiment", "value": 10 }
+      {
+        "label_en": "Pending bills",
+        "value": 20
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 12
+      },
+      {
+        "label_en": "Political events",
+        "value": 16
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 10
+      }
     ],
     "triggers": [
       {
         "title_en": "Advanced regenerative-medicine rules updated",
         "source_ko": "첨단재생의료 규제 개정",
         "date": "2026-06-08",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -213,19 +433,41 @@
     "industry": "semiconductor",
     "score": 42,
     "regcon": 4,
-    "sparkline": [30, 32, 35, 37, 39, 40, 41, 42],
+    "sparkline": [
+      30,
+      32,
+      35,
+      37,
+      39,
+      40,
+      41,
+      42
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 14 },
-      { "label_en": "Ownership-cap changes", "value": 10 },
-      { "label_en": "Political events", "value": 12 },
-      { "label_en": "Media sentiment", "value": 6 }
+      {
+        "label_en": "Pending bills",
+        "value": 14
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 10
+      },
+      {
+        "label_en": "Political events",
+        "value": 12
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 6
+      }
     ],
     "triggers": [
       {
         "title_en": "Strategic-tech export screening guidance issued",
         "source_ko": "국가첨단전략기술 수출심사 지침 발표",
         "date": "2026-05-25",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true
@@ -234,19 +476,41 @@
     "industry": "logistics",
     "score": 28,
     "regcon": 4,
-    "sparkline": [22, 23, 24, 25, 26, 27, 28, 28],
+    "sparkline": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      28
+    ],
     "breakdown": [
-      { "label_en": "Pending bills", "value": 10 },
-      { "label_en": "Ownership-cap changes", "value": 6 },
-      { "label_en": "Political events", "value": 7 },
-      { "label_en": "Media sentiment", "value": 5 }
+      {
+        "label_en": "Pending bills",
+        "value": 10
+      },
+      {
+        "label_en": "Ownership-cap changes",
+        "value": 6
+      },
+      {
+        "label_en": "Political events",
+        "value": 7
+      },
+      {
+        "label_en": "Media sentiment",
+        "value": 5
+      }
     ],
     "triggers": [
       {
         "title_en": "Logistics automation & labor rules under review",
         "source_ko": "물류 자동화·노동 규제 검토",
         "date": "2026-05-18",
-        "source_url": "https://www.yna.co.kr/"
+        "source_url": "https://www.yna.co.kr/",
+        "needs_verification": true
       }
     ],
     "needs_verification": true

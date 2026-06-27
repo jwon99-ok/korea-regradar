@@ -23,10 +23,10 @@ export function IndustrySelector({
             onClick={() => onSelect(ind.code)}
             aria-pressed={active}
             className={cn(
-              "rounded-full border px-3 py-1.5 text-sm transition-colors",
+              "rounded-full border px-3 py-1.5 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50",
               active
                 ? "border-accent/60 bg-accent/15 text-text"
-                : "border-border bg-surface text-muted hover:border-border hover:bg-surface-2 hover:text-text",
+                : "border-border bg-surface text-muted hover:border-accent/40 hover:bg-surface-2 hover:text-text",
             )}
           >
             {ind.name_en}

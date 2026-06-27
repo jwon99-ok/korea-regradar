@@ -49,7 +49,7 @@ export function OwnershipSignalLight({
         : Ban;
 
   return (
-    <div className="flex h-full flex-col gap-3 rounded-xl border border-border bg-surface/50 p-5">
+    <div className="flex h-full flex-col gap-3 rounded-xl border border-border bg-surface/50 p-5 transition-colors hover:border-accent/40">
       <div className="flex items-start gap-4">
         <TrafficLight active={meta.lamp} />
 

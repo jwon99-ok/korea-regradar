@@ -50,6 +50,7 @@ function synthFromSeed(industry: IndustryCode): AgentBrief {
     },
     korean_quote: {
       text_ko: t?.source_ko ?? "",
+      text_en: t?.title_en, // the trigger headline is the English of source_ko
       source_title: "Source",
       source_url: t?.source_url ?? "https://www.investkorea.org/",
     },

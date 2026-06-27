@@ -69,6 +69,7 @@ export interface RiskTrigger {
   source_ko: string;
   date: string;
   source_url: string;
+  needs_verification: boolean; // true when the link is a publisher home page, not a verified article
 }
 
 export interface IndustryRisk {
@@ -127,7 +128,12 @@ export interface AgentBrief {
     delta: number; // suggested score change, -8..8
     rationale_en: string;
   };
-  korean_quote: { text_ko: string; source_title: string; source_url: string };
+  korean_quote: {
+    text_ko: string;
+    text_en?: string; // faithful English translation of the quote itself
+    source_title: string;
+    source_url: string;
+  };
   sources: AgentSource[];
 }
 

@@ -165,7 +165,7 @@ Return a JSON object with EXACTLY these fields:
     "delta": <integer between -8 and 8: how much this should move the regulatory-risk score>,
     "rationale_en": "<one sentence>"
   },
-  "korean_quote": { "text_ko": "<a short verbatim Korean quote from ONE source>", "source_title": "<that source title>", "source_url": "<that source url>" },
+  "korean_quote": { "text_ko": "<a short verbatim Korean quote from ONE source>", "text_en": "<faithful English translation of text_ko only — do not summarize or add context>", "source_title": "<that source title>", "source_url": "<that source url>" },
   "sources": [ {"title":"...","url":"..."} ]
 }
 
@@ -233,6 +233,9 @@ function normalizeBrief(industry: IndustryCode, b: AgentBrief): AgentBrief {
     },
     korean_quote: {
       text_ko: String(b.korean_quote?.text_ko ?? ""),
+      text_en: b.korean_quote?.text_en
+        ? String(b.korean_quote.text_en)
+        : undefined,
       source_title: String(b.korean_quote?.source_title ?? ""),
       source_url: String(b.korean_quote?.source_url ?? ""),
     },
