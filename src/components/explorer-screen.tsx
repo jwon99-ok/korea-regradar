@@ -59,7 +59,7 @@ export function ExplorerScreen({
 
   return (
     <div className="space-y-6">
-      <GlobalDisclaimer asOf="2025" />
+      <GlobalDisclaimer />
 
       <header className="space-y-2">
         <p className="tabular text-xs uppercase tracking-[0.2em] text-accent">
@@ -70,8 +70,8 @@ export function ExplorerScreen({
         </h1>
         <p className="max-w-2xl text-sm text-muted">
           Industry-by-industry foreign-ownership limits as a traffic-light
-          signal — green, capped, or restricted — each backed by the Korean
-          legal basis and an as-of date.
+          signal — green, capped, or restricted — each backed by its Korean
+          legal basis.
         </p>
       </header>
 

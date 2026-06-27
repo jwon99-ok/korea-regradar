@@ -91,18 +91,15 @@ export function OwnershipSignalLight({
       </div>
 
       <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-1">
-        <div className="flex items-center gap-2">
-          <VerificationBadge needsVerification={fdi.needs_verification} />
-          <span className="tabular text-xs text-muted">as-of {fdi.as_of}</span>
-        </div>
+        <VerificationBadge needsVerification={fdi.needs_verification} />
         <a
           href={fdi.source_url}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex shrink-0 items-center gap-0.5 text-xs text-accent hover:underline"
         >
-          {/* Be honest: an unverified link is the portal home, not the primary text. */}
-          {fdi.needs_verification ? "Portal" : "Source"}
+          {/* Honest labels: verified = a real legal deep link; otherwise the portal home. */}
+          {fdi.needs_verification ? "Portal" : "Legal basis"}
           <ArrowUpRight className="h-3 w-3" />
         </a>
       </div>
