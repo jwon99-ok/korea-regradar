@@ -8,7 +8,9 @@
     "reg_type": "bill",
     "status": "pending",
     "stage_en": "Committee review",
-    "industries": ["telecom"],
+    "industries": [
+      "telecom"
+    ],
     "introduced_date": "2026-05-21",
     "source_url": "https://likms.assembly.go.kr/",
     "needs_verification": true
@@ -22,10 +24,12 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["telecom"],
+    "industries": [
+      "telecom"
+    ],
     "introduced_date": "1991-08-10",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "law-broadcast-fdi",
@@ -36,10 +40,12 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["broadcasting"],
+    "industries": [
+      "broadcasting"
+    ],
     "introduced_date": "2000-01-12",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "law-aviation-fdi",
@@ -50,10 +56,12 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["aviation"],
+    "industries": [
+      "aviation"
+    ],
     "introduced_date": "2017-03-30",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "law-press-fdi",
@@ -64,10 +72,12 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["news_media"],
+    "industries": [
+      "news_media"
+    ],
     "introduced_date": "2010-01-25",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "law-electric-fdi",
@@ -78,10 +88,12 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["power"],
+    "industries": [
+      "power"
+    ],
     "introduced_date": "2001-02-24",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "restriction-defense-fip",
@@ -92,10 +104,12 @@
     "reg_type": "restriction",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["defense"],
+    "industries": [
+      "defense"
+    ],
     "introduced_date": "1998-09-16",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "law-game-lootbox",
@@ -106,10 +120,12 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force (since Mar 2024)",
-    "industries": ["gaming"],
+    "industries": [
+      "gaming"
+    ],
     "introduced_date": "2024-03-22",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   },
   {
     "id": "bill-fintech-eft",
@@ -120,7 +136,9 @@
     "reg_type": "bill",
     "status": "pending",
     "stage_en": "Committee review",
-    "industries": ["fintech"],
+    "industries": [
+      "fintech"
+    ],
     "introduced_date": "2026-04-09",
     "source_url": "https://likms.assembly.go.kr/",
     "needs_verification": true
@@ -134,9 +152,11 @@
     "reg_type": "law",
     "status": "in_force",
     "stage_en": "In force",
-    "industries": ["semiconductor"],
+    "industries": [
+      "semiconductor"
+    ],
     "introduced_date": "2022-08-04",
     "source_url": "https://www.law.go.kr/",
-    "needs_verification": false
+    "needs_verification": true
   }
 ]
