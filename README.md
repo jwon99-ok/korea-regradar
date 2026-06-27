@@ -1,45 +1,96 @@
+<div align="center">
+
 # Korea RegRadar
 
-Korea's industry regulations, foreign-ownership limits, and political landscape — decoded into English, in real time, for foreign founders entering the Korean market.
+**Korea's regulations, foreign-ownership limits, and political landscape — decoded into English, in real time, for foreign founders and investors entering the Korean market.**
 
-> 학생 해커톤(10:00–17:00) 제출용. Claude Code로 빌드.
+[![Build2026](https://img.shields.io/badge/Build2026-Hackathon-7C3AED?style=flat-square)](https://github.com)
+[![Next.js](https://img.shields.io/badge/Next.js-App_Router-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Exa](https://img.shields.io/badge/Exa-Search_API-1A1A1A?style=flat-square)](https://exa.ai)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Reasoning-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com)
+[![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://vercel.com)
 
-## 문서 구조
+[**Live Demo**](#) · [**Demo Video**](#) · [**Pitch Deck**](#)
 
-| 파일 | 역할 | 누가 읽나 |
-|---|---|---|
-| `CLAUDE.md` | 상시 지침 + 문서 라우팅 | **Claude Code가 매 세션 자동 로드** |
-| `PROGRESS.md` | 빌드 진행 상태 + 로그 | 매 작업 시작/종료 시 |
-| `docs/SPEC.md` | 제품·범위·스택·디자인 토큰 | 제품 결정 시 |
-| `docs/DATA.md` | 시드 데이터 스키마 + 실데이터 | H1(데이터) 작업 시 |
-| `docs/SCREENS.md` | 화면·컴포넌트 명세 | H2/H3/H5(화면) 작업 시 |
-| `docs/BUILD.md` | 프로토콜·시간표·Unit 프롬프트·발표 | 빌드 순서 참조 시 |
-| `SPEC_FULL.md` | 원본 프로덕션 명세서 | **빌드 중 참조 안 함** (발표 비전 근거) |
+</div>
 
-핵심: 클로드 코드는 `CLAUDE.md`(자동) + `PROGRESS.md`(상태)만 항상 읽고,
-나머지 `docs/*`는 해당 Unit 작업할 때만 읽는다 → 컨텍스트 절약 + 상태 추적.
+> ⚠️ Replace the three links above with your Vercel URL, video link, and deck link before submitting.
 
-## 시작
+---
+
+## The Problem
+
+I've watched foreign founders get blocked entering Korea — not by the market, but by **information they literally couldn't read**. Korea's industry regulations, foreign-ownership caps, and pending legislation are all in Korean, scattered across the National Assembly, ministries, and the legal portal, and they shift with the political landscape.
+
+Today, every company entering Korea hires someone to track this **by hand**. It's slow, expensive, and always behind.
+
+## The Solution
+
+Korea RegRadar replaces that manual compliance workflow with an **AI agent**. It monitors primary Korean sources, translates and structures them into English, and scores regulatory risk per industry — turning a human research task into an automated, agent-driven operation.
+
+**This is a B2B compliance tool.** Every foreign company, VC, or law firm entering Korea is a customer — and the same agent scales to any regulated market (Vietnam, Indonesia, anywhere the regulatory information gap blocks founders).
+
+---
+
+## What it does
+
+- **🎯 Regulatory Risk Index** — A single DEFCON-style gauge ("REGCON") showing how hot legislative & regulatory risk is for each Korean industry, right now.
+- **🚦 Foreign-Ownership Signal Lights** — Industry-by-industry foreign equity caps at a glance: green (open 100%), amber (capped %), red (restricted). Sourced from the Foreign Investment Promotion Act.
+- **🤖 AI Compliance Agent** — Powered end-to-end by **Exa** (discovery) + **OpenAI** (reasoning): searches the latest Korean regulatory news live, summarizes it in English, and re-scores the risk — with the Korean source quote cited alongside.
+- **🏛️ Political Landscape** — National Assembly composition and bloc power, providing the *why* behind regulatory shifts.
+
+Every card shows the **Korean source quote + a link**. The agent cites facts — it doesn't infer them.
+
+---
+
+## Tech Stack
+
+**Frontend** · Next.js (App Router) · TypeScript · Tailwind CSS · shadcn/ui · D3 (gauge / hemicycle) · Recharts · Framer Motion
+
+**AI / Data** · Exa Search API (live discovery) · OpenAI API (English summarization, classification, scoring) · curated seed data from primary Korean sources
+
+**Deploy** · Vercel
+
+Sponsor technology is the core engine, not a coat of paint: the gauge, signal lights, and live brief are all driven by the Exa + OpenAI agent pipeline.
+
+---
+
+## Run locally
 
 ```bash
-# 1) 원본 프로덕션 명세서를 repo에 둔다 (발표 비전 근거용)
-cp /path/to/SEA-RegRadar_기획_빌드명세서.md ./SPEC_FULL.md
+# 1) install
+pnpm install
 
-# 2) ⚠️ 키 보안 먼저 — 절대 커밋 금지
-echo ".env.local" >> .gitignore
+# 2) add API keys (see .env.example)
+cp .env.example .env.local
+#   EXA_API_KEY=...
+#   OPENAI_API_KEY=...
+#   (keys are used server-side only, never exposed to the client)
 
-# 3) git + repo (제출 요건: PUBLIC 필수)
-git init && git add -A && git commit -m "chore: spec scaffold"
-gh repo create korea-regradar --public --source=.
-#   빌드 중엔 private로 하고 제출 직전 공개해도 됨:
-#   gh repo create korea-regradar --private --source=.   →  나중에  gh repo edit --visibility public
-#   ★ public 전환 직전 .env.local이 커밋 안 됐는지 반드시 확인 (git log -p로 키 노출 점검)
-
-# 4) 라이브 에이전트(H6) 키 — .env.local 에 EXA_API_KEY, OPENAI_API_KEY
-
-# 5) Claude Code 시작
-claude
-# → "PROGRESS.md 읽고 H0부터 시작해" 라고 지시
+# 3) dev
+pnpm dev          # http://localhost:3000
 ```
 
-빌드 순서·Unit 프롬프트는 `docs/BUILD.md §8` 참조.
+> The live agent feature falls back to cached responses if keys are absent, so the dashboard renders fully without them.
+
+---
+
+## Data sources
+
+| Source | Used for |
+|---|---|
+| [Invest Korea](https://www.investkorea.org/) · Foreign Investment Promotion Act | Foreign-ownership caps by industry |
+| [National Assembly Bill Information](https://likms.assembly.go.kr/) (Open API) | Pending bills / legislative status |
+| [Korea Law Information Center](https://law.go.kr/) | Regulation source text |
+| Korean news (via Exa) | Live regulatory signals |
+
+All regulatory and political data is shown with its source link and an as-of date. Unverified political interpretation is labeled "analytical interpretation."
+
+---
+
+## Built for Build2026
+
+A Proof-of-Work hackathon project, designed and directed by the team and built with Claude Code as an AI pair-builder in a single day. The full production architecture (multi-source ingestion pipeline, pgvector semantic search, automated translation) is documented in [`SPEC_FULL.md`](./SPEC_FULL.md) as the scaling vision beyond this demo.
+
+`#supcareer #build2026 #hackathon #PetaniAI`
